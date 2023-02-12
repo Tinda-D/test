@@ -36,7 +36,15 @@ def get_current_price(ticker):
 
 # 로그인
 upbit = pyupbit.Upbit(access, secret)
-print("autotrade start")
+print("Autotrade start")
+# Telegram 메세지 코드 시작
+async def startmsg(): #실행시킬 함수명 임의지정==매수 메세지
+    token = '5300696373:AAHeDrkyBmg1F15XmfhJnTHSeSVgwPWd6qo'
+    bot = telegram.Bot(token = token)
+    await bot.send_message(5015949114,'Autotrade start')
+    
+asyncio.run(startmsg())   
+# Telegram 메세지 코드 끝
 
 # 자동매매 시작
 while True:
