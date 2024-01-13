@@ -4,8 +4,9 @@ import datetime
 import telegram
 import asyncio
 
-access = "CH1zcN42WbxIgtEs1kPPPLcAAHR64WCl1J9cjGwr"
-secret = "xROzT6fwijueKLyLMfx66mclDj7Vl30sZUWjF3Yp"
+access = "8Rd0urwoJbsLGfoVy8Rie6x3NLJznitB2TKSDifG"
+secret = "luhb6LykVI1W56QV7LhdUM7X0cEPUwEUeHIR5QwC"
+#secret = "xROzT6fwijueKLyLMfx66mclDj7Vl30sZUWjF3Yp" 23년도 시크릿
 
 def get_target_price(ticker, k):
     """변동성 돌파 전략으로 매수 목표가 조회"""
